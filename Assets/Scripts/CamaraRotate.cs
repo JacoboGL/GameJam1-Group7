@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class CamaraRotate : MonoBehaviour
 {
-    public float speed;
-
-    public static bool rotationEnabled = true;
+    public float rotationSpeed = 1f;
 
     void Update()
     {
-
-        if (rotationEnabled)
-        {
-            transform.Rotate(0, speed * Time.deltaTime, 0);
-        }
+        // Rotar el objeto alrededor del eje Y
+        transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
 }

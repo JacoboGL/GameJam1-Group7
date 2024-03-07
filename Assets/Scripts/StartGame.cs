@@ -10,7 +10,7 @@ public class StartGame : MonoBehaviour
     void Start()
     {
         // Desactivar el canvas al inicio del juego
-        canvas.SetActive(false);
+        canvas.SetActive(true);
     }
 
     public void OnStartButtonClick()
@@ -18,8 +18,5 @@ public class StartGame : MonoBehaviour
         // Desactivar el canvas al hacer clic en el botón de inicio
         canvas.SetActive(false);
 
-        // Mover la cámara a view1
-        Camera.main.transform.position = view1.position;
-        Camera.main.transform.rotation = view1.rotation;
     }
 }

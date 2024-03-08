@@ -7024,6 +7024,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64444443302316780, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64444443302316780, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
 --- !u!4 &3225206398631524859 stripped
@@ -7049,6 +7057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &3525428302051039579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7104,6 +7113,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64437297842944316, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
 --- !u!1 &3524651699162357287 stripped
@@ -7124,6 +7137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!4 &3529968793072946475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4540667670795376, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
@@ -7332,6 +7346,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64437297842944316, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
 --- !u!4 &8990630607640964928 stripped
@@ -7357,6 +7375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &8995099480006773317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7424,6 +7443,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64444443302316780, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64444443302316780, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
 --- !u!4 &8990745698125714029 stripped
@@ -7462,6 +7489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &8995099480281016093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7529,6 +7557,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64444443302316780, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 64444443302316780, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f788b3ac76896b459c93cf4d673fa57, type: 3}
 --- !u!4 &8990745697859813173 stripped
@@ -7567,6 +7603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &8995099480522690079
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7578,21 +7615,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: bananas
       objectReference: {fileID: 0}
+    - target: {fileID: 2631752116086184562, guid: e1757a2b65e80524385b1928df059513, type: 3}
+      propertyPath: m_TagString
+      value: Food
+      objectReference: {fileID: 0}
     - target: {fileID: 5885899090287944183, guid: e1757a2b65e80524385b1928df059513, type: 3}
       propertyPath: m_RootOrder
       value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 5885899090287944183, guid: e1757a2b65e80524385b1928df059513, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.3524
+      value: 2.9969578
       objectReference: {fileID: 0}
     - target: {fileID: 5885899090287944183, guid: e1757a2b65e80524385b1928df059513, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.3524
+      value: 2.9969578
       objectReference: {fileID: 0}
     - target: {fileID: 5885899090287944183, guid: e1757a2b65e80524385b1928df059513, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.3524
+      value: 2.9969578
       objectReference: {fileID: 0}
     - target: {fileID: 5885899090287944183, guid: e1757a2b65e80524385b1928df059513, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7725,6 +7766,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64437297842944316, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
 --- !u!4 &8990630607773376314 stripped
@@ -7763,6 +7808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &8995099480799698036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7892,6 +7938,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 64437297842944316, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0c71b64a7dfbd74cb2f2acf7a3637a3, type: 3}
 --- !u!4 &8990630608654383022 stripped
@@ -7917,6 +7967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &8995099481087809798
 PrefabInstance:
   m_ObjectHideFlags: 0

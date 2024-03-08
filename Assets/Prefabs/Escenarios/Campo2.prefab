@@ -374,10 +374,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3985113993348537721}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e9089b1db16b58f4282a94e020b9c0e8, type: 3}
 --- !u!114 &5875827737436596372
@@ -393,6 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &3985113994895678043
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,10 +487,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3985113994895678043}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e9089b1db16b58f4282a94e020b9c0e8, type: 3}
 --- !u!114 &5875827738966765494
@@ -505,6 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &5875827736980112804
 GameObject:
   m_ObjectHideFlags: 0
@@ -8282,7 +8284,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6722268834551911082}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -8300,6 +8302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &6722268834817676801
 GameObject:
   m_ObjectHideFlags: 0
@@ -8343,7 +8346,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6722268834817676801}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -8361,6 +8364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &6722268835540452737
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,7 +8408,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6722268835540452737}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -8422,6 +8426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &6835371979210781429
 GameObject:
   m_ObjectHideFlags: 0
@@ -8437,7 +8442,7 @@ GameObject:
   - component: {fileID: 5875827737638024412}
   m_Layer: 0
   m_Name: apple_red
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8451,7 +8456,7 @@ Transform:
   m_GameObject: {fileID: 6835371979210781429}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.6610756, y: 1.17, z: 12.367401}
-  m_LocalScale: {x: 4.1024, y: 4.1024, z: 4.1024}
+  m_LocalScale: {x: 5.045131, y: 5.045131, z: 5.045131}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5875827737006151740}

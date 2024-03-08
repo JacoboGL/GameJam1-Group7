@@ -8,10 +8,24 @@ using Cinemachine;
 public class GameManager : MonoBehaviour
 {
     private MonoBehaviour playerMovementScript;
-
     private MonoBehaviour generateLevel;
     public GameObject player;
+    public GameObject gameOverScreen;
+    public PlayerMovement playerCollision;
     [SerializeField] CinemachineVirtualCamera thirdPerson;
+
+    void Start()
+    {
+        gameOverScreen.SetActive(false);
+    }
+
+    void Update()
+    {
+        if(playerCollision.gameOver == true)
+        {
+            gameOverScreen.SetActive(true);
+        }
+    }
 
     // Método que inicia la corrutina para cambiar a la cámara de tercera persona después de un retraso
     public void StartSwitchToThirdPersonCoroutine()

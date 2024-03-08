@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     public static float leftSide = -5.5f;
     public static float rightSide = 5.5f;
+    public bool gameOver = false;
+    public bool winner = false;
 
     // Update is called once per frame
     void Update()
@@ -28,6 +30,22 @@ public class PlayerMovement : MonoBehaviour
         if(horizontalMovementInput < 0 && transform.position.x > leftSide)
         {
             transform.Translate(horizontalMovementInput * Time.deltaTime * horizontalSpeed, 0, 0);
+        }
+        
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.tag != "Food")
+        {
+            gameOver = true;
+        }
+
+        if(other.tag != "Meta")
+        {
+            winner = true;
+
+            // Mostar cinematica de fin
         }
         
     }

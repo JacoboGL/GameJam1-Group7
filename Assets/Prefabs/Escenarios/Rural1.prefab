@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2060823556647101695}
   m_Layer: 0
   m_Name: apple_red
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 1427281200283411166}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.4300003, y: 0.8, z: 15.580002}
-  m_LocalScale: {x: 4.836, y: 4.836, z: 4.836}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5.18, y: 5.18, z: 5.18}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2060823557311139186}
   m_RootOrder: 42
@@ -1766,7 +1766,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823556423371216}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6, y: 2.047512, z: 0.20000002}
@@ -1784,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823556452147948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2272,7 +2273,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823556663577281}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6, y: 2.047512, z: 0.20000002}
@@ -2290,6 +2291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823556669185715
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,7 +3803,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823557302811986}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6, y: 2.047512, z: 0.20000002}
@@ -3819,6 +3821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823557311139187
 GameObject:
   m_ObjectHideFlags: 0
@@ -4223,7 +4226,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823557360986591}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.8234503, y: 1.1531501, z: 1.4126664}
@@ -4241,6 +4244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823557379370631
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,7 +5621,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823557778997248}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6, y: 2.047512, z: 0.20000002}
@@ -5635,6 +5639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823557787579952
 GameObject:
   m_ObjectHideFlags: 0
@@ -5825,7 +5830,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823557812588869}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6, y: 2.047512, z: 0.20000002}
@@ -5843,6 +5848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823557829206195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6345,7 +6351,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060823558025198850}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6, y: 2.047512, z: 0.20000002}
@@ -6363,6 +6369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2060823558063835800
 GameObject:
   m_ObjectHideFlags: 0

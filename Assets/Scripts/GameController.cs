@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public GameObject[] grassFields;
     public GameObject[] cityOutside;
     public GameObject[] cityBlocks;
+    public GameObject metaBlock;
     private int zPosition = 150;
     public bool createSection = false;
     public int sectionNumber;
@@ -36,7 +37,7 @@ public class GameController : MonoBehaviour
             Instantiate(grassFields[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
             zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
             createSection = false;
         }
 
@@ -46,7 +47,7 @@ public class GameController : MonoBehaviour
             Instantiate(cityOutside[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
             zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
             createSection = false;
         }
 
@@ -56,7 +57,16 @@ public class GameController : MonoBehaviour
             Instantiate(cityBlocks[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
             zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(4);
+            yield return new WaitForSeconds(6);
+            createSection = false;
+        }
+
+        if (levelCounter > 20)
+        {
+            Instantiate(metaBlock, new Vector3(0, 0, zPosition), Quaternion.identity);
+            zPosition += 50;
+            levelCounter += 1;
+            yield return new WaitForSeconds(20);
             createSection = false;
         }
         

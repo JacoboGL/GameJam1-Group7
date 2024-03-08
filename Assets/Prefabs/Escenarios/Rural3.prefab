@@ -93,7 +93,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36021830265638644}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 18.948435, y: 3.8692183, z: 4.644804}
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &36021830317219342
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +205,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36021830317219342}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 18.948435, y: 3.8692183, z: 4.644804}
@@ -222,6 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &1788912603670245806
 GameObject:
   m_ObjectHideFlags: 0
@@ -7478,7 +7480,7 @@ GameObject:
   - component: {fileID: 3829507859631913566}
   m_Layer: 0
   m_Name: watermelon
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7492,8 +7494,8 @@ Transform:
   m_GameObject: {fileID: 7813328834911032106}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.3923645, y: 1.19, z: 10.5099945}
-  m_LocalScale: {x: 2.1402, y: 2.1402, z: 2.1402}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3.67, y: 3.67, z: 3.67}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4106742397365690906}
   m_RootOrder: 48
@@ -7992,7 +7994,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8690133469760563500}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.811429, y: 2.9151213, z: 2.811429}
@@ -8010,6 +8012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &8690133469773691996
 GameObject:
   m_ObjectHideFlags: 0
@@ -8109,7 +8112,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8690133469773691996}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.811429, y: 2.9151213, z: 2.811429}
@@ -8127,6 +8130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &8690133470413677171
 GameObject:
   m_ObjectHideFlags: 0
@@ -8226,7 +8230,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8690133470413677171}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.811429, y: 2.9151213, z: 2.811429}
@@ -8244,6 +8248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &8690133470976476523
 GameObject:
   m_ObjectHideFlags: 0
@@ -8343,7 +8348,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8690133470976476523}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.811429, y: 2.9151213, z: 2.811429}
@@ -8361,6 +8366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &8736541440996170450
 GameObject:
   m_ObjectHideFlags: 0

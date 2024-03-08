@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class Obstacles : MonoBehaviour
 {
     public GameObject player;
-    //public GameObject gameOverScreen;
-    private bool playerAlive = true;
+    public bool playerAlive = true;
 
     void Start()
     {
@@ -27,8 +26,6 @@ public class Obstacles : MonoBehaviour
         player.GetComponent<PlayerMovement>().enabled = false;
         player.GetComponent<Animator>().enabled = false;
         player.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        
-        //gameOverScreen.SetActive(true);
 
         playerAlive = false;
     }

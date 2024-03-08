@@ -1543,7 +1543,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942407437797617161}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.5788176, z: 1}
@@ -1561,6 +1561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2089679047146521639
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +3087,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091541059226594519}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6946046, y: 3.5785658, z: 9.302495}
@@ -3104,6 +3105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2091541059303954365
 GameObject:
   m_ObjectHideFlags: 0
@@ -7891,7 +7893,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091541061027245437}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.9580617, y: 2.1952403, z: 6.3205423}
@@ -7909,6 +7911,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &2091541061029265168
 GameObject:
   m_ObjectHideFlags: 0
@@ -10179,7 +10182,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3835527460630450141}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.65, y: 4.002273, z: 2.4052415}
@@ -10197,6 +10200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &3978077813792148562
 GameObject:
   m_ObjectHideFlags: 0
@@ -10373,7 +10377,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3995775409925516710}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1215776, y: 0.8752417, z: 0.38956544}
@@ -10391,6 +10395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &3995775410300502890
 GameObject:
   m_ObjectHideFlags: 0
@@ -10484,7 +10489,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3995775410300502890}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.1215776, y: 0.8752417, z: 0.38956544}
@@ -10502,6 +10507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &4082900660312631648
 GameObject:
   m_ObjectHideFlags: 0
@@ -15208,7 +15214,7 @@ GameObject:
   - component: {fileID: 2091541059410734922}
   m_Layer: 0
   m_Name: average_meat
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16084,7 +16090,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8274199091703305639}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.15961069, y: 0.16799054, z: 0.15961069}
@@ -16102,6 +16108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &8274199092609638959
 GameObject:
   m_ObjectHideFlags: 0
@@ -16195,7 +16202,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8274199092609638959}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.15961073, y: 0.16799058, z: 0.15961069}
@@ -16213,6 +16220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &8342996936607201812
 GameObject:
   m_ObjectHideFlags: 0

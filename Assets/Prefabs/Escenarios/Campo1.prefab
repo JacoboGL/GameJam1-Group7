@@ -6974,7 +6974,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718917349834957517}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 5.5617986, z: 1}
@@ -6992,6 +6992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1 &1718917349841743749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7652,6 +7653,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1987064381963287093, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
 --- !u!4 &243556809484485203 stripped
@@ -7677,6 +7682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &1718917349510002183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7744,6 +7750,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1987064381963287093, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
 --- !u!4 &243556809683708467 stripped
@@ -7769,6 +7779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!1001 &1718917349514819352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7780,25 +7791,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: beet
       objectReference: {fileID: 0}
+    - target: {fileID: 374438692445335195, guid: 584aac24bb325014383237e86fbf5164, type: 3}
+      propertyPath: m_TagString
+      value: Food
+      objectReference: {fileID: 0}
     - target: {fileID: 1043030460095919137, guid: 584aac24bb325014383237e86fbf5164, type: 3}
       propertyPath: m_RootOrder
       value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1043030460095919137, guid: 584aac24bb325014383237e86fbf5164, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.478577
+      value: 4.3701363
       objectReference: {fileID: 0}
     - target: {fileID: 1043030460095919137, guid: 584aac24bb325014383237e86fbf5164, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.4785771
+      value: 4.3701363
       objectReference: {fileID: 0}
     - target: {fileID: 1043030460095919137, guid: 584aac24bb325014383237e86fbf5164, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.4785771
+      value: 4.3701363
       objectReference: {fileID: 0}
     - target: {fileID: 1043030460095919137, guid: 584aac24bb325014383237e86fbf5164, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.4056497
+      value: 3.24
       objectReference: {fileID: 0}
     - target: {fileID: 1043030460095919137, guid: 584aac24bb325014383237e86fbf5164, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7927,6 +7942,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1987064381963287093, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
 --- !u!1 &243556810677571119 stripped
@@ -7947,6 +7966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1
 --- !u!4 &243556810678063631 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1493958779012619316, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
@@ -8007,6 +8027,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1987064381963287093, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9de24523a11d714db3851b5f0f9d527, type: 3}
 --- !u!4 &6841534938512659241 stripped
@@ -8032,3 +8056,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  playerAlive: 1

@@ -22,7 +22,7 @@ public class Food : MonoBehaviour
     {
         biteSound.Play();
 
-        //PlayerScore.pizzaScore += 1;
+        FoodCounter.playerScore += 1;
 
         Destroy(this.gameObject);
     }

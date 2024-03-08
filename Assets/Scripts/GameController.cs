@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     public GameObject[] grassFields;
     public GameObject[] cityOutside;
     public GameObject[] cityBlocks;
-    public int zPosition = 90;
+    public int zPosition = 135;
     public bool createSection = false;
     public int sectionNumber;
     public int levelCounter = 1;

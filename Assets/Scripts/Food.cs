@@ -5,7 +5,7 @@ using UnityEngine;
 public class Food : MonoBehaviour
 {
     private float rotateSpeed = 20.0f;
-    public AudioSource biteSound;
+    private AudioSource biteSound;
 
     void Start()
     {

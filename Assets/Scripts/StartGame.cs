@@ -9,13 +9,12 @@ using System;
 public class StartGame : MonoBehaviour
 {
     public GameObject canvas; // Referencia al objeto del canvas
-
+    public bool gameStared = false;
     [SerializeField] CinemachineVirtualCamera truckView;
     [SerializeField] CinemachineVirtualCamera thirdPerson;
-
     public GameManager gameManager;
 
-     void Start()
+    void Start()
     {
         // Busca el botón en la escena
         Button startButton = GetComponent<Button>();
@@ -38,6 +37,7 @@ public class StartGame : MonoBehaviour
         // Cambiar la cámara a truckView
         CameraSwitcher.SwitchCamera(truckView);
     }
+
 
     void ChangeCamera()
     {

@@ -7,6 +7,10 @@ using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
+    private MonoBehaviour playerMovementScript;
+
+    private MonoBehaviour generateLevel;
+    public GameObject player;
     [SerializeField] CinemachineVirtualCamera thirdPerson;
 
     // Método que inicia la corrutina para cambiar a la cámara de tercera persona después de un retraso
@@ -18,9 +22,20 @@ public class GameManager : MonoBehaviour
     IEnumerator SwitchToThirdPersonAfterDelay()
     {
         // Espera 3 segundos
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         // Cambia a la cámara de tercera persona
         CameraSwitcher.SwitchCamera(thirdPerson);
+
+        // Activa el movimiento del jugador
+        playerMovementScript = player.GetComponent("PlayerMovement") as MonoBehaviour;
+        playerMovementScript.enabled = enabled;
+
+        generateLevel = GetComponent("GameController") as MonoBehaviour;
+        generateLevel.enabled = enabled;
+
+        Animator playerAnim = player.GetComponent<Animator>();
+        playerAnim.SetBool("galope", true);
+
     }
 }

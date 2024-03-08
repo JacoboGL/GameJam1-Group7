@@ -1,16 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
     public GameObject[] grassFields;
     public GameObject[] cityOutside;
     public GameObject[] cityBlocks;
-    public int zPosition = 135;
+    private int zPosition = 150;
     public bool createSection = false;
     public int sectionNumber;
     public int levelCounter = 1;
+
+    void Start()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -24,33 +30,33 @@ public class GameController : MonoBehaviour
 
     IEnumerator GenerateSection()
     {
-        if (levelCounter <= 15)
+        if (levelCounter <= 8)
         {
             sectionNumber = Random.Range(0,5);
             Instantiate(grassFields[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
-            zPosition += 45;
+            zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(4);
             createSection = false;
         }
 
-        if (levelCounter > 15 && levelCounter <= 30)
+        if (levelCounter > 8 && levelCounter <= 15)
         {
             sectionNumber = Random.Range(0,5);
             Instantiate(cityOutside[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
-            zPosition += 45;
+            zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(4);
             createSection = false;
         }
 
-        if (levelCounter > 30 && levelCounter <= 40)
+        if (levelCounter > 15 && levelCounter <= 20)
         {
             sectionNumber = Random.Range(0,5);
             Instantiate(cityBlocks[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
-            zPosition += 45;
+            zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(4);
             createSection = false;
         }
         

@@ -12,6 +12,14 @@ public class PlayerMovement : MonoBehaviour
     public static float rightSide = 5.5f;
     public bool gameOver = false;
     public bool winner = false;
+    private Rigidbody playerRb;
+    public bool isGrounded = true;
+    public float jumpForce;
+
+    void Start()
+    {
+        playerRb = GetComponent<Rigidbody>();
+    }
 
     // Update is called once per frame
     void Update()
@@ -31,7 +39,28 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(horizontalMovementInput * Time.deltaTime * horizontalSpeed, 0, 0);
         }
+
+        // Salto del jugador
+        if(Input.GetKeyDown("space") && isGrounded == true && gameOver == false)
+        {
+            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            isGrounded = false;
+
+            //playerAnim.SetTrigger("Jump_trig");
+
+            //dirtParticle.Stop();
+            //audioPlayer.PlayOneShot(jumpSound, 1.0f);
+        }
         
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+            //dirtParticle.Play();
+        }
     }
 
     public void OnTriggerEnter(Collider other)

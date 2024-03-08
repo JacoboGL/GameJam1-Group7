@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
         playerMovementScript = player.GetComponent("PlayerMovement") as MonoBehaviour;
         playerMovementScript.enabled = enabled;
 
-        generateLevel = GetComponent("GameController") as MonoBehaviour;
+        generateLevel = GetComponent("LevelSpawner") as MonoBehaviour;
         generateLevel.enabled = enabled;
 
         Animator playerAnim = player.GetComponent<Animator>();

@@ -4236,7 +4236,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607829959}
-  m_LocalRotation: {x: 0.2425906, y: -9.771872e-16, z: 1.4403624e-15, w: 0.9701288}
+  m_LocalRotation: {x: 0.24259059, y: 0.0000000323247, z: -0.000000008083121, w: 0.9701288}
   m_LocalPosition: {x: 0, y: 4.033, z: -6.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4609,6 +4609,7 @@ MonoBehaviour:
   - {fileID: 4662224123216426561, guid: 9205990013f78f649adbd44d2cb1ca2e, type: 3}
   - {fileID: 1788912603670245806, guid: 8b6772ba4981819478a44243ef870f6e, type: 3}
   cityBlocks: []
+  metaBlock: {fileID: 7526618304306214349, guid: b58a6ba62d76af0478fa04c3add10d65, type: 3}
   createSection: 0
   sectionNumber: 0
   levelCounter: 1
@@ -5857,9 +5858,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 10
-  horizontalSpeed: 15
+  horizontalSpeed: 13
   horizontalMovementInput: 0
   gameOver: 0
+  winner: 0
+  isGrounded: 1
+  jumpForce: 7
 --- !u!4 &784737629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400258, guid: 233b230b862737048af21a9549932a0e, type: 3}
@@ -10218,10 +10222,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Campo-1 Inicio
       objectReference: {fileID: 0}
-    - target: {fileID: 3909366181118826106, guid: 3676a81ded2b5164ba29578f9d52ddc6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3909366181118826107, guid: 3676a81ded2b5164ba29578f9d52ddc6, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -10825,7 +10825,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641111812}
-  m_LocalRotation: {x: 0.1867363, y: 1.7451109e-15, z: -3.317103e-16, w: 0.9824101}
+  m_LocalRotation: {x: 0.18673632, y: -0.000000014639051, z: 0.000000002782588, w: 0.9824101}
   m_LocalPosition: {x: 0.03999999, y: 3.96, z: 18.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -13918,14 +13918,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7133625482688019352, guid: 289d075a91ff50f4ab263721e05fe0d4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 115.35089
-      objectReference: {fileID: 0}
-    - target: {fileID: 7133625482688019352, guid: 289d075a91ff50f4ab263721e05fe0d4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.10999
-      objectReference: {fileID: 0}
     - target: {fileID: 7133625483401377398, guid: 289d075a91ff50f4ab263721e05fe0d4, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -13973,10 +13965,6 @@ PrefabInstance:
     - target: {fileID: 7133625483401377399, guid: 289d075a91ff50f4ab263721e05fe0d4, type: 3}
       propertyPath: m_Name
       value: Campo-3 Inicio
-      objectReference: {fileID: 0}
-    - target: {fileID: 7133625483401377399, guid: 289d075a91ff50f4ab263721e05fe0d4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 289d075a91ff50f4ab263721e05fe0d4, type: 3}

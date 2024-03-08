@@ -37,27 +37,27 @@ public class LevelSpawner : MonoBehaviour
             Instantiate(grassFields[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
             zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(4);
             createSection = false;
         }
 
         if (levelCounter > 8 && levelCounter <= 15)
         {
-            sectionNumber = Random.Range(0,5);
+            sectionNumber = Random.Range(0,3);
             Instantiate(cityOutside[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
             zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(4);
             createSection = false;
         }
 
         if (levelCounter > 15 && levelCounter <= 20)
         {
-            sectionNumber = Random.Range(0,5);
+            sectionNumber = Random.Range(0,4);
             Instantiate(cityBlocks[sectionNumber], new Vector3(0, 0, zPosition), Quaternion.identity);
             zPosition += 50;
             levelCounter += 1;
-            yield return new WaitForSeconds(6);
+            yield return new WaitForSeconds(4);
             createSection = false;
         }
 

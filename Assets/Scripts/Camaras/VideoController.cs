@@ -17,6 +17,8 @@ public class VideoController : MonoBehaviour
             return;
         }
 
+        videoPlayer.url = System.IO.Path.Combine (Application.streamingAssetsPath,"VideoIntro.mp4");
+
         // Suscribe el método VideoFinished() al evento de finalización del video
         videoPlayer.loopPointReached += VideoFinished;
     }

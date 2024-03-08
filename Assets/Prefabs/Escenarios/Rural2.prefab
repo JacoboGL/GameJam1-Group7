@@ -11384,6 +11384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6772297106738489464}
+  - component: {fileID: 1979189703957929394}
   m_Layer: 0
   m_Name: Rural2
   m_TagString: Untagged
@@ -11407,6 +11408,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1979189703957929394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662224123216426561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32d21ab1f7450794ba8bd4e664fb77b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4699096837021730334
 GameObject:
   m_ObjectHideFlags: 0
@@ -15212,6 +15225,7 @@ GameObject:
   - component: {fileID: 6291804588301817628}
   - component: {fileID: 8121131120100631510}
   - component: {fileID: 2091541059410734922}
+  - component: {fileID: 1114415054}
   m_Layer: 0
   m_Name: average_meat
   m_TagString: Food
@@ -15296,6 +15310,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4622ec8170dd44f8c8899c93a89381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1114415054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7761093907036258819}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35169813, y: 0.04545617, z: 0.58429}
+  m_Center: {x: 0.000000044703484, y: 0.02272807, z: 0}
 --- !u!1 &7768312724649441304
 GameObject:
   m_ObjectHideFlags: 0

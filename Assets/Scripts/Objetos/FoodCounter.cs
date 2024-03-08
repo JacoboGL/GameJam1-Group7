@@ -8,6 +8,11 @@ public class FoodCounter : MonoBehaviour
     public static int playerScore;
     public GameObject foodCounter;
 
+    void Start()
+    {
+        playerScore = 0;
+    }
+
     // Update is called once per frame
     void Update()
     {
